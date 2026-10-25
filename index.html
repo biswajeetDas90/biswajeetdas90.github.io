@@ -191,6 +191,18 @@
         .footer-right {
             text-align: left;
         }
+
+        .social-icon-img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            transition: opacity 0.2s ease;
+        }
+
+        .social-icon-img:hover {
+            opacity: 0.7;
+        }
+
     </style>
 </head>
 <body>
@@ -203,7 +215,7 @@
                 <p class="logo-name">Biswajeet Das</p>
             </div>
             <nav>
-                <a href="#">Resume</a>
+                <a href="res/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 <span>|</span>
                 <a href="#">Projects</a>
                 <span>|</span>
@@ -225,7 +237,7 @@
                 <p>I am a Senior iOS Engineer with over 14 years of experience building scalable, high-performance mobile ecosystems across the F&B, FinTech, healthcare, and IPTV spaces. My core focus is designing modular architectures and SDKs that empower large-scale teams to ship rapidly and reliably within complex Super App environments. Beyond writing clean code, I specialize in streamlining deployments through robust CI/CD pipelines and guiding cross-functional teams toward agile excellence through hands-on mentorship.</p>
                 
                 <div class="action-buttons">
-                    <a href="#" class="circle-btn btn-resume">Resume</a>
+                    <a href="res/resume.pdf" target="_blank" rel="noopener noreferrer" class="circle-btn btn-resume">Resume</a>
                     <a href="#" class="circle-btn btn-projects">Projects</a>
                     <a href="#" class="circle-btn btn-contact">Contact</a>
                 </div>
@@ -246,11 +258,13 @@
             </div>
             <div class="footer-col">
                 <strong>Follow Me</strong>
-                <a href="https://linkedin.com/in/biswajeet-das-575a4152" class="social-icon">in</a>
-            </div>
+                <a href="https://linkedin.com/in/biswajeet-das-575a4152" target="_blank" rel="noopener noreferrer">
+                    <img src="res/LinkedIn_logo.png" alt="LinkedIn" class="social-icon-img">
+                </a>
+            </div>            
             <div class="footer-col footer-right">
                 <p>© 2026 By Biswajeet Das.</p>
-                <p>Powered and secured by <u>Wix</u></p>
+                <p>Powered by <u>Github</u></p>
             </div>
         </footer>
     </div>
