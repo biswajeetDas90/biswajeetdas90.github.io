@@ -1,10 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biswajeet Das - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --text-color: #000000;
+            --accent-yellow: #f1aa1b;
+            --accent-red: #f84432;
+            --accent-teal: #7cdcd7;
+            --text-muted: #555555;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-circle {
+            width: 20px;
+            height: 20px;
+            background-color: var(--accent-yellow);
+            border-radius: 50%;
+        }
+
+        .logo-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            transition: opacity 0.2s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        nav span {
+            color: #999;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            padding: 80px 0 120px 0;
+        }
+
+        .hero-image {
+            flex: 0 0 420px;
+            height: 420px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .hero-content h1 {
+            font-size: 5rem;
+            font-weight: 800;
+            margin: 0 0 20px 0;
+            line-height: 1;
+        }
+
+        .hero-content h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0 0 15px 0;
+        }
+
+        .hero-content p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .circle-btn {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            color: var(--text-color);
+            border: 1px solid #000;
+            transition: transform 0.2s ease;
+        }
+
+        .circle-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-resume { background-color: var(--accent-yellow); }
+        .btn-projects { background-color: var(--accent-red); }
+        .btn-contact { background-color: var(--accent-teal); }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #e0e0e0;
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+        }
+
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer-col strong {
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        .footer-col p, .footer-col a {
+            margin: 0;
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .social-icon {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--text-color) !important;
+        }
+
+        .footer-right {
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>My website is officially live.</p>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo-container">
+                <div class="logo-circle"></div>
+                <p class="logo-name">Biswajeet Das</p>
+            </div>
+            <nav>
+                <a href="#">Resume</a>
+                <span>|</span>
+                <a href="#">Projects</a>
+                <span>|</span>
+                <a href="#">Contact</a>
+                <span>|</span>
+                <a href="#">Portfolio</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="hero">
+            <div class="hero-image">
+                <img src="res/IMG_0004.jpg" alt="Biswajeet Das">
+            </div>
+            
+            <div class="hero-content">
+                <h1>Hello</h1>
+                <h2>A Bit About Me</h2>
+                <p>I am a Senior iOS Engineer with over 14 years of experience building scalable, high-performance mobile ecosystems across the F&B, FinTech, healthcare, and IPTV spaces. My core focus is designing modular architectures and SDKs that empower large-scale teams to ship rapidly and reliably within complex Super App environments. Beyond writing clean code, I specialize in streamlining deployments through robust CI/CD pipelines and guiding cross-functional teams toward agile excellence through hands-on mentorship.</p>
+                
+                <div class="action-buttons">
+                    <a href="#" class="circle-btn btn-resume">Resume</a>
+                    <a href="#" class="circle-btn btn-projects">Projects</a>
+                    <a href="#" class="circle-btn btn-contact">Contact</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer>
+            <div class="footer-col">
+                <strong>Phone</strong>
+                <p>+91-8698010499</p>
+            </div>
+            <div class="footer-col">
+                <strong>Email</strong>
+                <a href="mailto:biswajeet089@gmail.com">biswajeet089@gmail.com</a>
+            </div>
+            <div class="footer-col">
+                <strong>Follow Me</strong>
+                <a href="https://linkedin.com/in/biswajeet-das-575a4152" class="social-icon">in</a>
+            </div>
+            <div class="footer-col footer-right">
+                <p>© 2026 By Biswajeet Das.</p>
+                <p>Powered and secured by <u>Wix</u></p>
+            </div>
+        </footer>
+    </div>
+
 </body>
 </html>
